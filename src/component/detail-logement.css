@@ -1,0 +1,117 @@
+
+.detail-title {
+    color: #FF6060;
+}
+
+.detail-title h2 {
+    font-family: Montserrat;
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 51px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin: 30px 0px 0px 0px;
+}
+
+.detail-title p {
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 26px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin: 0;
+}
+
+.detail-tag {
+    width: 50%;
+    display: flex;
+    justify-content: flex-start;
+
+    /*margin: 15px;*/
+}
+
+.detail-tag span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 25px;
+    width: 115px;
+    border-radius: 10px;
+    background-color: #FF6060;
+    color: white;
+    margin: 20px 13px 0px 0px
+}
+
+.container-description{
+    display: flex;
+    justify-content: space-between;
+}
+.bloc-description{
+    width: 40%;
+}
+.bloc-description .title {
+    position: relative;
+    margin-top: 26px;
+    height: 52px;
+    border-radius: 10px;
+    background: #FF6060;
+    color: white;
+    text-align: left;
+    display: flex;
+}
+.bloc-description .title h3{
+  margin: 13px 0px 13px 20px;
+}
+
+.bloc-description .texte {
+    height: 249px;
+    margin-top: -14px;
+    border-radius: 0px 0px 10px 10px;
+    background: #F6F6F6;
+    color: white;
+    text-align: center;
+
+}
+
+.bloc-description .texte p {
+    height: 156px;
+    width: 90%;
+    color: #FF6060;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 142.6%;
+    margin: 10px;
+    padding-top: 15px;
+}
+.bloc-equipement{
+    width: 40%;
+}
+
+.bloc-equipement .title {
+    position: relative;
+    margin-top: 26px;
+    height: 52px;
+    border-radius: 10px;
+    background: #FF6060;
+    color: white;
+    text-align: left;
+    display: flex;
+}
+.bloc-equipement .detail {
+    margin-top: -14px;
+    height: 249px;
+    border-radius: 0px 0px 10px 10px;
+    background: #F6F6F6;
+    color: white;
+    text-align: center;
+}
+.bloc-equipement .title h3{
+    margin: 13px 0px 13px 20px;
+}
+.bloc-equipement ul{
+    margin: 10px;
+    padding-top: 15px;
+}
