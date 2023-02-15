@@ -36,11 +36,12 @@
     align-items: center;
     justify-content: center;
     height: 25px;
-    width: 115px;
+    width: auto;
     border-radius: 10px;
     background-color: #FF6060;
     color: white;
-    margin: 20px 13px 0px 0px
+    margin: 20px 13px 0px 0px;
+    padding: 5px;
 }
 
 .container-description{
@@ -105,8 +106,14 @@
     height: 249px;
     border-radius: 0px 0px 10px 10px;
     background: #F6F6F6;
-    color: white;
+    color: red;
     text-align: center;
+    list-style-type: none;
+}
+.bloc-equipement .detail li{
+    list-style-type: none;
+    text-align: left;
+    margin-top: 5px;
 }
 .bloc-equipement .title h3{
     margin: 13px 0px 13px 20px;

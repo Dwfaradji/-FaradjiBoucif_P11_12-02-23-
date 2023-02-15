@@ -30,7 +30,10 @@ const DetailLogement = () => {
                             <p>{logement.location}</p>
                         </div>
                         <div className="detail-tag">
-                            <span>tag1</span><span>tag2</span><span>tag3</span>
+                            {logement.tags.map((tag, i) => (
+                                <div key={i}><span>{tag}</span></div>
+
+                            ))}
                         </div>
                         <div className="container-description">
                             <div className="bloc-description">
@@ -41,9 +44,6 @@ const DetailLogement = () => {
                                 <div className="texte">
                                     <p>{logement.description}</p>
                                 </div>
-
-
-
                             </div>
                             <div className="bloc-equipement">
                                 <div className="title">
@@ -51,9 +51,9 @@ const DetailLogement = () => {
                                 </div>
                                 <div className="detail">
                                     <ul>
-                                        <li></li>
-                                        <li></li>
-                                        <li></li>
+                                        {logement.equipments.map((equipement, i) => (
+                                            <div key={i}><li>{equipement}</li></div>
+                                        ))}
                                     </ul>
                                 </div>
 

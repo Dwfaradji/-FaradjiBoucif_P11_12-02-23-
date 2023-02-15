@@ -1,6 +1,5 @@
 .card {
     margin: 56px 50px 50px 50px;
-    border: 1px solid black;
     height: 340px;
     width: 340px;
     left: 0px;
@@ -50,7 +49,6 @@
 .container-list {
     display: flex;
     flex-wrap: wrap;
-    border: 1px solid black;
     height: auto;
     width: 100%;
     left: 0px;
