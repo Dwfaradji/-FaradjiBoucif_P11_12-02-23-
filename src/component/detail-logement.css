@@ -2,7 +2,34 @@
 .detail-title {
     color: #FF6060;
 }
+.container-title{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.img-profil img{
+    display: flex;
+    justify-content: flex-end;
+    width: 60px;
+    height: 60px;
+    border-radius: 50px;
+    background-color: gray;
+}
+.img-profil{
+    display: flex;
+    align-items: center;
+}
+.img-profil p{
+    width: 68px;
+    color:#FF6060 ;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 26px;
+    letter-spacing: 0em;
 
+
+}
 .detail-title h2 {
     font-family: Montserrat;
     font-size: 36px;

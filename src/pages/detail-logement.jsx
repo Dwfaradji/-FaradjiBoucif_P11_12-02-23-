@@ -25,9 +25,17 @@ const DetailLogement = () => {
                 <div>
                     <Caroussel detail={logement}/>
                     <div className="container-detail">
+                        <div className="container-title">
                         <div className="detail-title">
                             <h2>{logement.title}</h2>
                             <p>{logement.location}</p>
+                        </div>
+                        <div className="img-profil">
+                            <p className="profil-name">
+                                {logement.host.name}
+                            </p>
+                            <img src={logement.host.picture} alt=""/>
+                        </div>
                         </div>
                         <div className="detail-tag">
                             {logement.tags.map((tag, i) => (
@@ -35,6 +43,7 @@ const DetailLogement = () => {
 
                             ))}
                         </div>
+
                         <div className="container-description">
                             <div className="bloc-description">
                                 <div className="title">
@@ -52,7 +61,9 @@ const DetailLogement = () => {
                                 <div className="detail">
                                     <ul>
                                         {logement.equipments.map((equipement, i) => (
-                                            <div key={i}><li>{equipement}</li></div>
+                                            <div key={i}>
+                                                <li>{equipement}</li>
+                                            </div>
                                         ))}
                                     </ul>
                                 </div>
