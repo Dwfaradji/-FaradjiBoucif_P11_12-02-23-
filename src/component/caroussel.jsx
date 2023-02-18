@@ -3,15 +3,14 @@ import "./caroussel.css"
 import chevronRight from "../images/Vector.svg"
 import chevronLeft from "../images/Vector-2.svg"
 
-const Caroussel = ({detail}) => {
-    console.log(detail.pictures)
+const Caroussel = ({pictures}) => {
     return (
         <div>
             <section className="carousel">
                 <div className="slides">
                     {/*image du caroussel*/}
                     <div className="slide">
-                        <img src={detail.pictures[0]} alt=""/>
+                        <img src={pictures[0]} alt=""/>
                     </div>
 
                 </div>

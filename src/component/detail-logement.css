@@ -2,6 +2,9 @@
 .detail-title {
     color: #FF6060;
 }
+.container-detail {
+    margin-bottom: 5%;
+}
 .container-title{
     display: flex;
     align-items: center;
@@ -16,6 +19,15 @@
     background-color: gray;
 }
 .img-profil{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.box-star{
+    position: relative;
+    top: 41px;
+}
+.box-profil {
     display: flex;
     align-items: center;
 }
@@ -49,13 +61,14 @@
     text-align: left;
     margin: 0;
 }
+.collapse{
+    margin-right:76px
+}
 
 .detail-tag {
     width: 50%;
     display: flex;
     justify-content: flex-start;
-
-    /*margin: 15px;*/
 }
 
 .detail-tag span {
@@ -69,83 +82,4 @@
     color: white;
     margin: 20px 13px 0px 0px;
     padding: 5px;
-}
-
-.container-description{
-    display: flex;
-    justify-content: space-between;
-}
-.bloc-description{
-    width: 40%;
-}
-.bloc-description .title {
-    position: relative;
-    margin-top: 26px;
-    height: 52px;
-    border-radius: 10px;
-    background: #FF6060;
-    color: white;
-    text-align: left;
-    display: flex;
-}
-.bloc-description .title h3{
-  margin: 13px 0px 13px 20px;
-}
-
-.bloc-description .texte {
-    height: 249px;
-    margin-top: -14px;
-    border-radius: 0px 0px 10px 10px;
-    background: #F6F6F6;
-    color: white;
-    text-align: center;
-
-}
-
-.bloc-description .texte p {
-    height: 156px;
-    width: 90%;
-    color: #FF6060;
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 142.6%;
-    margin: 10px;
-    padding-top: 15px;
-}
-.bloc-equipement{
-    width: 40%;
-}
-
-.bloc-equipement .title {
-    position: relative;
-    margin-top: 26px;
-    height: 52px;
-    border-radius: 10px;
-    background: #FF6060;
-    color: white;
-    text-align: left;
-    display: flex;
-}
-.bloc-equipement .detail {
-    margin-top: -14px;
-    height: 249px;
-    border-radius: 0px 0px 10px 10px;
-    background: #F6F6F6;
-    color: red;
-    text-align: center;
-    list-style-type: none;
-}
-.bloc-equipement .detail li{
-    list-style-type: none;
-    text-align: left;
-    margin-top: 5px;
-}
-.bloc-equipement .title h3{
-    margin: 13px 0px 13px 20px;
-}
-.bloc-equipement ul{
-    margin: 10px;
-    padding-top: 15px;
 }
