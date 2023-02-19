@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import {useParams, Link} from 'react-router-dom';
 import datas from "../Api/annonces-logements.json"
-import Caroussel from "../component/caroussel";
+import Carousel from "../component/carousel";
 import "../component/detail-logement.css"
 import Collapse from "../component/collapse";
 import Star from "../component/star";
@@ -22,7 +22,7 @@ const DetailLogement = () => {
         <div className="container-detail">
             {logement ? (
                 <div>
-                    <Caroussel pictures={logement.pictures}/>
+                    <Carousel pictures={logement.pictures}/>
                     <div className="container-detail">
                         <div className="container-title">
                             <div className="detail-title">

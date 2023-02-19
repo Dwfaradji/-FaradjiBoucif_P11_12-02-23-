@@ -2,7 +2,6 @@ import React from "react";
 import "./star.css"
 
 const Star = ({star}) => {
-    console.log(star)
     const nbEtoiles = parseInt(star);
     const etoiles = Array(nbEtoiles).fill().map((_, index) => (
         <span key={index}><i className="fa-solid fa-star"></i></span>
