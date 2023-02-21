@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react';
-import {useParams, Link} from 'react-router-dom';
+import {useParams} from 'react-router-dom';
 import datas from "../Api/annonces-logements.json"
 import Carousel from "../component/carousel";
 import "../component/detail-logement.css"
@@ -18,6 +18,7 @@ const DetailLogement = () => {
             }
         })
     }, [params.id]);
+
     return (
         <div className="container-detail">
             {logement ? (
@@ -31,10 +32,10 @@ const DetailLogement = () => {
                             </div>
                             <div className="img-profil">
                                 <div className="box-profil">
-                                <p className="profil-name">
-                                    {logement.host.name}
-                                </p>
-                                <img src={logement.host.picture} alt=""/>
+                                    <p className="profil-name">
+                                        {logement.host.name}
+                                    </p>
+                                    <img src={logement.host.picture} alt=""/>
 
                                 </div>
                                 <Star star={logement.rating}/>
@@ -50,7 +51,10 @@ const DetailLogement = () => {
                             <div className="collapse">
                                 <Collapse description={logement.description} title={"Description"}/>
                             </div>
-                            <Collapse description={logement.description} title={"Description"}/>
+                            <div className="collapse">
+
+                                <Collapse equipement={logement.equipments} title={"Équipement"}/>
+                            </div>
                         </div>
                     </div>
 

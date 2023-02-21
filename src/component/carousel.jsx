@@ -35,7 +35,7 @@ const Carousel = ({pictures}) => {
                 </button>
                 <button className={`arrow next ${arrow}`} onClick={nextImage}><img className="chevronRight" src={chevronRight}
                                                                         alt=""/></button>
-                <span className="count-pictures">{currentImage+1} /{pictures.length}</span>
+                <span className={`count-pictures ${arrow}`}>{currentImage+1} /{pictures.length}</span>
             </section>
         </div>
     );
