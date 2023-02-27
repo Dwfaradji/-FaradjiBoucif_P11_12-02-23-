@@ -1,19 +1,19 @@
 import React, {useState} from "react";
 import './collapse.css'
 
-let count = 0
 
 const Collapse = (collapse) => {
     const [rotate, setRotate] = useState()
     const [style, setStyle] = useState()
+    const [count,setCount]=useState(0)
 
     const onHideCollapse = () => {
         if (count === 0) {
             setStyle("hidden")
             setRotate("chevron-rotate")
-            count++
-        } else if (count === 1) {
-            count--
+            setCount(count+1)
+        } else {
+            setCount(count-1)
             setStyle("")
             setRotate("")
         }
@@ -37,11 +37,8 @@ const Collapse = (collapse) => {
                         ))
                         }
                     </ul>
-
                 </div>
-
             )}
-
         </div>
     )
 }

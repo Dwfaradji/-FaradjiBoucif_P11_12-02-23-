@@ -1,16 +1,16 @@
 import React, {useState, useEffect} from 'react';
-import {useParams} from 'react-router-dom';
+import { useParams} from 'react-router-dom';
 import datas from "../Api/annonces-logements.json"
 import Carousel from "../component/carousel";
 import "../component/detail-logement.css"
 import Collapse from "../component/collapse";
 import Star from "../component/star";
-
+import PageNotFound from "./page-not-found";
 
 const DetailLogement = () => {
     const params = useParams()
     const [logement, setLogement] = useState(null);
-
+    console.log(logement)
     useEffect(() => {
         datas.forEach(data => {
             if (params.id === data.id) {
@@ -52,7 +52,6 @@ const DetailLogement = () => {
                                 <Collapse description={logement.description} title={"Description"}/>
                             </div>
                             <div className="collapse">
-
                                 <Collapse equipement={logement.equipments} title={"Équipement"}/>
                             </div>
                         </div>
@@ -60,10 +59,9 @@ const DetailLogement = () => {
 
                 </div>
             ) : (
-                <h4 className="center">Aucun logement à afficher !</h4>
+                <PageNotFound/>
             )}
         </div>
-
     )
 }
 export default DetailLogement

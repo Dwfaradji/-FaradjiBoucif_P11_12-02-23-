@@ -5,14 +5,16 @@ import chevronLeft from "../images/Vector-2.svg"
 
 const Carousel = ({pictures}) => {
     const [currentImage, setCurrentImage] = useState(0);
+
+    //TODO vérifier le state arrow et le paramétre injecter dans le state voir si useEffect est nécéssaire
     const [arrow, setArrow] = useState(pictures);
+    console.log(pictures)
 
     useEffect(() => {
         if (pictures.length === 1) {
             setArrow("arrow-hidden");
         }
-    }, []);
-
+    });
 
     const previousImage = () => {
         setCurrentImage(currentImage === 0 ? pictures.length - 1 : currentImage - 1);
@@ -27,18 +29,17 @@ const Carousel = ({pictures}) => {
             <section className="carousel">
                 <div className="slides">
                     <div className="slide">
-                        <img src={pictures[currentImage]} alt="Caroussel"/>
+                        <img src={pictures[currentImage]} alt="Carousel"/>
                     </div>
                 </div>
                 <button className={`arrow prev ${arrow}`} onClick={previousImage}><img className="chevronLeft" src={chevronLeft}
-                                                                            alt=""/>
+                                                                            alt="bouton_précedent"/>
                 </button>
                 <button className={`arrow next ${arrow}`} onClick={nextImage}><img className="chevronRight" src={chevronRight}
-                                                                        alt=""/></button>
+                                                                        alt="bouton_suivant"/></button>
                 <span className={`count-pictures ${arrow}`}>{currentImage+1} /{pictures.length}</span>
             </section>
         </div>
     );
 };
-
 export default Carousel;
