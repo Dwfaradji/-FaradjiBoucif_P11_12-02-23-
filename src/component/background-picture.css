@@ -90,11 +90,13 @@
     border-radius: 25px;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .background-img img {
     border-radius: 25px;
     width: 100%;
+    height: inherit;
 }
 
 .background-filter {
@@ -111,9 +113,6 @@
 .background-title {
     position: absolute;
     z-index: 2;
-    left: 25.9%;
-    right: 25.14%;
-    top: 23.32%;
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 500;
@@ -121,4 +120,5 @@
     line-height: 142.6%;
     color: #FFFFFF;
     text-align: center;
+    width: 80%;
 }

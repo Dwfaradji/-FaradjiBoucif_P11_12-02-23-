@@ -6,10 +6,7 @@ import chevronLeft from "../images/Vector-2.svg"
 const Carousel = ({pictures}) => {
     const [currentImage, setCurrentImage] = useState(0);
 
-    //TODO vérifier le state arrow et le paramétre injecter dans le state voir si useEffect est nécéssaire
     const [arrow, setArrow] = useState(pictures);
-    console.log(pictures)
-
     useEffect(() => {
         if (pictures.length === 1) {
             setArrow("arrow-hidden");

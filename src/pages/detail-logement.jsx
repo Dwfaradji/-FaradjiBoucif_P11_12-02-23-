@@ -26,10 +26,24 @@ const DetailLogement = () => {
                     <Carousel pictures={logement.pictures}/>
                     <div className="container-detail">
                         <div className="container-title">
+                            <div className="test1">
+
+
                             <div className="detail-title">
                                 <h2>{logement.title}</h2>
                                 <p>{logement.location}</p>
                             </div>
+                            <div className="detail-tag">
+                                {logement.tags.map((tag, i) => (
+                                    <div key={i}><span>{tag}</span></div>
+
+                                ))}
+                            </div>
+                            </div>
+                            <div className="test2">
+
+
+
                             <div className="img-profil">
                                 <div className="box-profil">
                                     <p className="profil-name">
@@ -40,13 +54,9 @@ const DetailLogement = () => {
                                 </div>
                                 <Star star={logement.rating}/>
                             </div>
+                            </div>
                         </div>
-                        <div className="detail-tag">
-                            {logement.tags.map((tag, i) => (
-                                <div key={i}><span>{tag}</span></div>
 
-                            ))}
-                        </div>
                         <div className="container-description">
                             <div className="collapse">
                                 <Collapse description={logement.description} title={"Description"}/>

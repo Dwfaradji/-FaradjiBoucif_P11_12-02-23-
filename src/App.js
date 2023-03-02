@@ -16,7 +16,7 @@ const App = () => {
                     </div>
                     <nav className="nav-bar">
                         <ul>
-                            <li><Link to="/" className="link-nav">Acceuil</Link></li>
+                            <li><Link to="/" className="link-nav">Accueil</Link></li>
                             <li><Link to="/a_propos">A propos </Link></li>
                         </ul>
                     </nav>

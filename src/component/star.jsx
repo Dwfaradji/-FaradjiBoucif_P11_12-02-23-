@@ -12,7 +12,6 @@ const Star = ({star}) => {
     ));
     return (
         <div className="box-star ">
-
             <span className="etoiles">{etoiles}</span>
             <span className="etoiles-fix">
             {etoileFix}

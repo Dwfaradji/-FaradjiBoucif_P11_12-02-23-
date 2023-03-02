@@ -7,7 +7,6 @@ const BackgroundPicture = (background) => {
             <div className="background-img">
                 <img src={background.picture} alt=""/>
                 <div className="background-filter">
-
                 </div>
                 <p className="background-title">{background.title}</p>
             </div>

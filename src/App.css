@@ -41,4 +41,18 @@ body{
   text-align: right;
   font-style: normal;
 }
+@media (max-width: 800px){
+  body{
+    margin: 20px;
+  }
+  .background-filter {
+    width: calc(100% - 38px);
+  }
+  .logo img{
+    width: 80%;
+  }
+  .header{
+    align-items: baseline;
+  }
 
+}

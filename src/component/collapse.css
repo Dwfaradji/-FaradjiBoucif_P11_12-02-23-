@@ -20,7 +20,7 @@
 
 .hidden {
     visibility: collapse;
-    height: 17px;
+    height: 17px !important;
 }
 
 .chevron-rotate {
@@ -37,7 +37,7 @@
 }
 
 .bloc-description .texte {
-    /*height: 200px;*/
+    height: auto;
     margin-top: -23px;
     border-radius: 0px 0px 10px 10px;
     background: #F6F6F6;
@@ -48,7 +48,7 @@
 }
 
 .bloc-description .texte p {
-    height: 156px;
+    
     width: 90%;
     color: #FF6060;
     font-family: 'Montserrat';
@@ -111,4 +111,14 @@
 .bloc-equipement ul {
     margin: 10px;
     padding-top: 15px;
+}
+
+@media (max-width: 800px){
+    .container-description {
+        display: grid;
+        justify-content: space-between;
+        grid-column-gap: 60px;
+        grid-template-columns:1fr
+    }
+
 }
