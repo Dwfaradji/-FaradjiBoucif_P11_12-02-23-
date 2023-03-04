@@ -1,11 +1,17 @@
 import React from 'react';
-import {Link} from "react-router-dom";
-import {BrowserRouter as Router} from "react-router-dom"
+
+import {BrowserRouter as Router, NavLink} from "react-router-dom"
 import './index.css';
-import Logo from "./images/LOGO.png";
+import Logo from "./Assets/pictures/logoKasa.png";
 import RouteApp from './Routes/route'
+import"./App.css"
 
 const App = () => {
+    let activeStyle = {
+        textDecoration: "underline",
+    };
+
+
     return (
         <Router>
             <div>
@@ -16,8 +22,12 @@ const App = () => {
                     </div>
                     <nav className="nav-bar">
                         <ul>
-                            <li><Link to="/" className="link-nav">Accueil</Link></li>
-                            <li><Link to="/a_propos">A propos </Link></li>
+                            <li><NavLink to="/" style={({ isActive }) =>
+                                isActive ? activeStyle : undefined
+                            }>Accueil</NavLink></li>
+                            <li><NavLink to="/a_propos" style={({ isActive }) =>
+                                isActive ? activeStyle : undefined
+                            }>A propos </NavLink></li>
                         </ul>
                     </nav>
                 </header>

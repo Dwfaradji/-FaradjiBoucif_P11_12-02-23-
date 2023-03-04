@@ -43,7 +43,7 @@
 /*    width: 90%;*/
 /*    height: 223px;*/
 /*    margin-top: 110px;*/
-/*    background: url("/src/images/IMG.png");*/
+/*    background: url("/src/Assets/backgroundPictureHome.png");*/
 /*    mix-blend-mode: darken;*/
 /*    border-radius: 25px;*/
 /*    display: flex;*/
@@ -84,8 +84,8 @@
 .background-img {
     width: 100%;
     height: 223px;
-    margin-top: 110px;
-    /*background: url("/src/images/IMG.png");*/
+    margin-top: 49px;
+    /*background: url("/src/Assets/backgroundPictureHome.png");*/
     mix-blend-mode: darken;
     border-radius: 25px;
     display: flex;

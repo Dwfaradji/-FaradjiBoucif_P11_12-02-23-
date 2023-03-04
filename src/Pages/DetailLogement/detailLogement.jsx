@@ -1,11 +1,11 @@
 import React, {useState, useEffect} from 'react';
 import { useParams} from 'react-router-dom';
-import datas from "../Api/annonces-logements.json"
-import Carousel from "../component/carousel";
-import "../component/detail-logement.css"
-import Collapse from "../component/collapse";
-import Star from "../component/star";
-import PageNotFound from "./page-not-found";
+import datas from "../../Api/dataLogements.json"
+import Carousel from "../../Components/Carousel/carousel";
+import "./detailLogement.css"
+import Collapse from "../../Components/Collapse/collapse";
+import Star from "../../Components/Star/star";
+import PageNotFound from "../PageNotFound/pageNotFound";
 
 const DetailLogement = () => {
     const params = useParams()
@@ -26,9 +26,7 @@ const DetailLogement = () => {
                     <Carousel pictures={logement.pictures}/>
                     <div className="container-detail">
                         <div className="container-title">
-                            <div className="test1">
-
-
+                            <div className="content-head">
                             <div className="detail-title">
                                 <h2>{logement.title}</h2>
                                 <p>{logement.location}</p>
@@ -40,17 +38,13 @@ const DetailLogement = () => {
                                 ))}
                             </div>
                             </div>
-                            <div className="test2">
-
-
-
+                            <div className="content-profil">
                             <div className="img-profil">
                                 <div className="box-profil">
                                     <p className="profil-name">
                                         {logement.host.name}
                                     </p>
                                     <img src={logement.host.picture} alt=""/>
-
                                 </div>
                                 <Star star={logement.rating}/>
                             </div>

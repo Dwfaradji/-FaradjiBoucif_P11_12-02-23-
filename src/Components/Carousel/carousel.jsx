@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from 'react';
-import "./caroussel.css"
-import chevronRight from "../images/Vector.svg"
-import chevronLeft from "../images/Vector-2.svg"
+import "./carousel.css"
+import chevronRight from "../../Assets/icones/chevronRight.svg"
+import chevronLeft from "../../Assets/icones/chevronLeft.svg"
 
 const Carousel = ({pictures}) => {
     const [currentImage, setCurrentImage] = useState(0);
@@ -10,8 +10,10 @@ const Carousel = ({pictures}) => {
     useEffect(() => {
         if (pictures.length === 1) {
             setArrow("arrow-hidden");
+        }else{
+            setArrow(pictures)
         }
-    });
+    },[pictures]);
 
     const previousImage = () => {
         setCurrentImage(currentImage === 0 ? pictures.length - 1 : currentImage - 1);

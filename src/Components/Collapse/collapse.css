@@ -18,10 +18,7 @@
     align-items: center;
 }
 
-.hidden {
-    visibility: collapse;
-    height: 17px !important;
-}
+
 
 .chevron-rotate {
     transform: rotate(-179deg);
@@ -37,18 +34,23 @@
 }
 
 .bloc-description .texte {
-    height: auto;
+    visibility: collapse;
+    height: 17px ;
+    overflow: auto;
+}
+
+.hidden {
+    height: auto !important;
     margin-top: -23px;
     border-radius: 0px 0px 10px 10px;
     background: #F6F6F6;
     color: #FF6060;
     text-align: center;
     padding-top: 20px;
-
+    visibility: visible !important;
 }
 
 .bloc-description .texte p {
-    
     width: 90%;
     color: #FF6060;
     font-family: 'Montserrat';

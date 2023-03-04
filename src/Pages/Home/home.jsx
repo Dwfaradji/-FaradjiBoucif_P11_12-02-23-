@@ -1,9 +1,9 @@
 import React from "react";
-import '../App.css';
-import BackgroundPicture from "../component/background-picture";
-import CardList from "../component/card";
-import datas from "../Api/annonces-logements.json"
-import img from "../images/IMG.png"
+import './home.css';
+import BackgroundPicture from "../../Components/Background/backgroundPicture";
+import CardList from "../../Components/Card/card";
+import datas from "../../Api/dataLogements.json"
+import img from "../../Assets/pictures/backgroundPictureHome.png"
 
 const Home = () => {
     return (

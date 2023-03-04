@@ -83,12 +83,12 @@
     margin: 20px 13px 0px 0px;
     padding: 5px;
 }
-.test1{
+.content-head{
     display: flex;
     flex-direction: column;
     width: 80%;
 }
-.test2{
+.content-profil{
     display: flex;
 
 }
@@ -109,7 +109,7 @@
         justify-content: space-between;
         width: 100%;
     }
-    .test2{
+    .content-profil{
         width: 100%;
     }
 }

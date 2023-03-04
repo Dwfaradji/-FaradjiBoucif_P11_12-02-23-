@@ -1,8 +1,8 @@
 import React from "react";
-import BackgroundPicture from "../component/background-picture";
-import img from '../images/background-image2.png'
-import Collapse from "../component/collapse";
-import './a-propos.css'
+import BackgroundPicture from "../../Components/Background/backgroundPicture";
+import img from '../../Assets/pictures/backgroundPictureAPropos.png'
+import Collapse from "../../Components/Collapse/collapse";
+import './aPropos.css'
 
 const APropos = () => {
     const textCollapse = "La bienveillance fait partie des valeurs fondatrices de Kasa. Tout comportement discriminatoire ou de perturbation du voisinage entraînera une exclusion de notre plateforme."
