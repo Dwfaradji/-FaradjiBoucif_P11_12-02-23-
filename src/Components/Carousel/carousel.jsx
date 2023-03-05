@@ -5,15 +5,15 @@ import chevronLeft from "../../Assets/icones/chevronLeft.svg"
 
 const Carousel = ({pictures}) => {
     const [currentImage, setCurrentImage] = useState(0);
-
     const [arrow, setArrow] = useState(pictures);
+
     useEffect(() => {
         if (pictures.length === 1) {
             setArrow("arrow-hidden");
-        }else{
+        } else {
             setArrow(pictures)
         }
-    },[pictures]);
+    }, [pictures]);
 
     const previousImage = () => {
         setCurrentImage(currentImage === 0 ? pictures.length - 1 : currentImage - 1);
@@ -31,12 +31,14 @@ const Carousel = ({pictures}) => {
                         <img src={pictures[currentImage]} alt="Carousel"/>
                     </div>
                 </div>
-                <button className={`arrow prev ${arrow}`} onClick={previousImage}><img className="chevronLeft" src={chevronLeft}
-                                                                            alt="bouton_précedent"/>
+                <button className={`arrow prev ${arrow}`} onClick={previousImage}><img className="chevronLeft"
+                                                                                       src={chevronLeft}
+                                                                                       alt="bouton_précedent"/>
                 </button>
-                <button className={`arrow next ${arrow}`} onClick={nextImage}><img className="chevronRight" src={chevronRight}
-                                                                        alt="bouton_suivant"/></button>
-                <span className={`count-pictures ${arrow}`}>{currentImage+1} /{pictures.length}</span>
+                <button className={`arrow next ${arrow}`} onClick={nextImage}><img className="chevronRight"
+                                                                                   src={chevronRight}
+                                                                                   alt="bouton_suivant"/></button>
+                <span className={`count-pictures ${arrow}`}>{currentImage + 1} /{pictures.length}</span>
             </section>
         </div>
     );

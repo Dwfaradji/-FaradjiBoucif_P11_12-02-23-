@@ -6,10 +6,12 @@ const Star = ({star}) => {
     const etoiles = Array(nbEtoiles).fill().map((_, index) => (
         <span key={index}><i className="fa-solid fa-star"></i></span>
     ));
+
     const nbEtoilesFix = parseInt("5")
     const etoileFix = Array(nbEtoilesFix).fill().map((_, index) => (
         <span key={index}><i className="fa-solid fa-star"></i></span>
     ));
+
     return (
         <div className="box-star ">
             <span className="etoiles">{etoiles}</span>
@@ -19,5 +21,4 @@ const Star = ({star}) => {
         </div>
     )
 }
-
 export default Star;

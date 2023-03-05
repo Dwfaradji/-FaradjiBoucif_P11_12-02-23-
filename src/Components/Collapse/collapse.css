@@ -16,9 +16,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    cursor: pointer;
 }
-
-
 
 .chevron-rotate {
     transform: rotate(-179deg);
@@ -35,7 +34,7 @@
 
 .bloc-description .texte {
     visibility: collapse;
-    height: 17px ;
+    height: 17px;
     overflow: auto;
 }
 
@@ -72,7 +71,6 @@
     font-weight: 400;
     font-size: 18px;
     line-height: 142.6%;
-
 }
 
 .bloc-equipement {
@@ -115,12 +113,11 @@
     padding-top: 15px;
 }
 
-@media (max-width: 800px){
+@media (max-width: 800px) {
     .container-description {
         display: grid;
         justify-content: space-between;
         grid-column-gap: 60px;
         grid-template-columns:1fr
     }
-
 }

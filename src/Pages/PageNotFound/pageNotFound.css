@@ -8,16 +8,16 @@
     letter-spacing: 0em;
     text-align: center;
     color: #FF6060;
-
 }
 
-.erreur-text{
+.erreur-text {
     font-family: Montserrat;
     font-size: 36px;
     font-weight: 500;
     line-height: 51px;
     letter-spacing: 0em;
- }
+}
+
 .link-erreur {
     font-family: 'Montserrat';
     font-style: normal;

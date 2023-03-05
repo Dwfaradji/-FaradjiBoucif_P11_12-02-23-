@@ -10,8 +10,6 @@ const PageNotFound = () => {
             <Link to="/" className="link-erreur">
                 Retourner sur la page d’accueil
             </Link>
-
-
         </div>)
 }
 export default PageNotFound
