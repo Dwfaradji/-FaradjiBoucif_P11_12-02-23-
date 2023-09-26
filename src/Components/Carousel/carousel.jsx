@@ -5,13 +5,13 @@ import chevronLeft from "../../Assets/icones/chevronLeft.svg"
 
 const Carousel = ({pictures}) => {
     const [currentImage, setCurrentImage] = useState(0);
-    const [arrow, setArrow] = useState(pictures);
+    const [hide, setHide] = useState(pictures);
 
     useEffect(() => {
         if (pictures.length === 1) {
-            setArrow("arrow-hidden");
+            setHide("hide-hidden");
         } else {
-            setArrow(pictures)
+            setHide(pictures)
         }
     }, [pictures]);
 
@@ -31,14 +31,14 @@ const Carousel = ({pictures}) => {
                         <img src={pictures[currentImage]} alt="Carousel"/>
                     </div>
                 </div>
-                <button className={`arrow prev ${arrow}`} onClick={previousImage}><img className="chevronLeft"
+                <button className={`arrow prev ${hide}`} onClick={previousImage}><img className="chevronLeft"
                                                                                        src={chevronLeft}
                                                                                        alt="bouton_précedent"/>
                 </button>
-                <button className={`arrow next ${arrow}`} onClick={nextImage}><img className="chevronRight"
+                <button className={`arrow next ${hide}`} onClick={nextImage}><img className="chevronRight"
                                                                                    src={chevronRight}
                                                                                    alt="bouton_suivant"/></button>
-                <span className={`count-pictures ${arrow}`}>{currentImage + 1} /{pictures.length}</span>
+                <span className={`count-pictures ${hide}`}>{currentImage + 1} /{pictures.length}</span>
             </section>
         </div>
     );

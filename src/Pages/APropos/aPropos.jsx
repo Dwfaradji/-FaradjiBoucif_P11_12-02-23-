@@ -11,9 +11,9 @@ const APropos = () => {
             <BackgroundPicture picture={img}/>
             <div className="container-collapse">
                 <Collapse title={"Fiabilité"} description={textCollapse}/>
-                <Collapse title={"Respect"}/>
-                <Collapse title={"Service"}/>
-                <Collapse title={"Responsabilité"}/>
+                <Collapse title={"Respect"} description={textCollapse} />
+                <Collapse title={"Service"} description={textCollapse}/>
+                <Collapse title={"Responsabilité"} description={textCollapse}/>
             </div>
         </div>
     )

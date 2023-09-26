@@ -1,4 +1,4 @@
-import React, {useRef, useState, useEffect} from "react";
+import React, { useState} from "react";
 import './collapse.css'
 
 const Collapse = (collapse) => {
@@ -17,7 +17,6 @@ const Collapse = (collapse) => {
             setRotate("")
         }
     }
-
     return (
         <div className="bloc-description">
             <div className="title" onClick={onHideCollapse}>

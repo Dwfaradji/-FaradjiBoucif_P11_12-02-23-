@@ -14,3 +14,7 @@ const BackgroundPicture = (background) => {
     )
 }
 export default BackgroundPicture
+
+
+
+

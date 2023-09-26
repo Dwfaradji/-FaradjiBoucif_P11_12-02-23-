@@ -65,3 +65,5 @@ const DetailLogement = () => {
     )
 }
 export default DetailLogement
+
+
